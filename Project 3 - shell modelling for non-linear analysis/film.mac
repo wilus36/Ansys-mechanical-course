@@ -1,0 +1,16 @@
+kroki=20
+/VIEW,1,1,1,1        ! ustawienie rzutu izometrycznego (korzystne akurat dla wspornika osi kr¹¿ka)
+/ANG,1
+/FOC,1,250.0,-8.0,-6.0 !ustawienie kamery
+/CONT,1,9,0, ,360 !ustawienie zakresu warstwic 0÷360 (jeœli bêda malowane naprê¿enia to zakres w [MPa])
+
+/POST1  
+/SEG,DELE            !opró¿nianie "filmowego" bufora pamiêci po poprzednim filmie
+/SEG,MULT,film3,1    ! film3 - nazwa pliku .avi
+*DO,I,1,kroki
+  SET,1,I            ! czas na koncu kroku czasowego
+  PLNSOL,S,EQV,2
+* ENDDO
+/SEG,OFF
+ANIM,1,0,2
+

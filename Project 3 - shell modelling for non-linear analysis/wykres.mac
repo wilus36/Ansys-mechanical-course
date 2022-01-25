@@ -1,0 +1,10 @@
+srodkowy=23
+/POST26 
+NSOL,2,srodkowy,U,Y,UY
+NSOL,3,srodkowy,U,X,UX
+NSOL,4,srodkowy,U,Z,UZ
+!TVAR,0                      ! o� czasu w [s], a nie jako numer danej
+!XVAR,0                      ! na osi x zmienna nr 0, czyli czas
+!PLTIME,0,0.45               ! zakres osi x
+PLVAR,2,3,4
+!FINISH

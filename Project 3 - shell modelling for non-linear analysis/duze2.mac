@@ -1,0 +1,10 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!! duze !!!!!!!!!!!!!!!!!!!!!!!!!!!
+! parametry obliczeñ z uwzglêdnieniem du¿ych przemieszczeñ !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+/SOLU   
+ANTYPE,0            ! analiza statyczna
+NLGEOM,ON
+NSUBST,40,40,40       ! podzia³ obliczeñ na podkroki obliczeniowe (pocz¹tek, max, min)
+OUTRES,ALL,ALL
+FINISH

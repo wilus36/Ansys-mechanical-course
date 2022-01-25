@@ -1,0 +1,11 @@
+m=10
+/SOLU
+FK, 214, FY, 76*m
+FK, 58, FY, 76*m
+FK, 25, FY, 76*m
+FK, 51, FY, 76*m
+FK, 214, FZ, -211*m
+FK, 58, FZ, -211*m
+FK, 25, FZ, 211*m
+FK, 51, FZ, 211*m
+FINISH

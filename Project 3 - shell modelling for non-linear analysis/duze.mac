@@ -1,0 +1,11 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!! duze !!!!!!!!!!!!!!!!!!!!!!!!!!!
+! parametry oblicze� z uwzgl�dnieniem du�ych przemieszcze� !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+/SOLU   
+ANTYPE,0            ! analiza statyczna
+NLGEOM,ON
+AUTOTS,ON
+NSUBST,5,500,5       ! podzia� oblicze� na podkroki obliczeniowe (pocz�tek, max, min)
+OUTRES,ALL,ALL
+FINISH

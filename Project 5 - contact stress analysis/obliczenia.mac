@@ -1,0 +1,11 @@
+/SOLU
+ALLSEL
+NLGEOM,ON            ! efekt duzych przemieszczen
+AUTOTS,1             ! automatycznie dobierany czas krok�w
+
+FK,21,FY,-12000
+FK,21,FX,25000
+FK,58,FX,-25000
+
+SOLVE
+FINISH

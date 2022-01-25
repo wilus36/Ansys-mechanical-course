@@ -1,0 +1,28 @@
+/PREP7  
+
+!ET,  1,SHELL93
+ET,  1,SHELL281 ! nowy element sko�czony, zast�pi� SHELL93
+R,1,0.9
+R,2,20
+MP,EX,1,2.1E5
+LESIZE,ALL,,,6
+MSHKEY,1   ! wymusza zastosowanie mapped meshingu (je�li 0 - to free meshing, jest to nowocze�niejsza wersja komendy ESHAPE,2)
+
+!!!!Uwaga: zastosowane zr�nicowanie grubo�ci blachy nie ma absolutnie sensu technicznego
+!!!!zosta�o wprowadzone jedynie jako ilustracja techniki zr�nicowania grubo�ci blach
+
+!podzia� powierzchni z parametrem nr 1 (grubo�� blachy b1)
+ASEL,S,AREA,,33
+ASEL,A,AREA,,34
+ASEL,A,AREA,,12
+ASEL,A,AREA,,11
+REAL,1
+AMESH,ALL   
+
+!podzia� powierzchni z parametrem nr 2 (grubo�� blachy b2)
+ASEL,INVE !odwraca zaznaczenie
+REAL,2
+AMESH,ALL
+/ESHAPE,1.0
+ALLSEL
+FINISH

@@ -1,0 +1,5 @@
+/POST1
+/ESHAPE,1.0       !wykorzystanie liczbowych parametrów ("real constants") elementów skoñczonych w grafice
+/CONT,1,9,0, ,500 !ustawienie zakresu warstwic 0÷500 (jeœli bêda malowane naprê¿enia to zakres w [MPa])
+!/CONT,1,9,AUTO   !automatyczny dobór zakresu warstwic
+PLNSOL,S,EQV,2

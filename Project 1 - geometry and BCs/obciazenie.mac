@@ -1,0 +1,10 @@
+/SOLU   !413,100 (górne) ,406,81 (dolne) 
+FK, 413, FY, -76
+FK, 100, FY, -76
+FK, 406, FY, -76
+FK, 81, FY, -76
+FK, 413, FZ, 211
+FK, 100, FZ, 211
+FK, 406, FZ, -211
+FK, 81, FZ, -211
+FINISH

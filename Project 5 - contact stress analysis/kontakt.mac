@@ -1,0 +1,44 @@
+/PREP7
+ET,2,CONTA174  !WAŁ
+KEYOPT,2,5,3 !prze��cznik wst�pnego przesuni�cia niepodpartego modelu do uzyskania kontaktu
+ASEL,S,AREA,,13
+ASEL,A,AREA,,55
+ASEL,A,AREA,,97
+ASEL,A,AREA,,139
+NSLA,S,1
+ESLN,S,0
+TYPE,2
+MAT,1
+REAL,2   
+ESURF
+!ESURF,,REVERSE
+ALLSEL
+
+!kontaktowy element dla kuli
+
+ET,3,TARGE170
+KEYOPT,3,1,1     ! elementy wysokiego rz�du
+R,2
+!R,2,0,0,0.1,0.05,0,0,   
+!RMORE,0,0,0,0,0,0,  
+!RMORE,0,
+!RMORE, , ,0,0,
+
+!PIASTA
+
+ASEL,S,AREA,,116
+ASEL,A,AREA,,153
+ASEL,A,AREA,,32
+ASEL,A,AREA,,74
+ASEL,A,AREA,,121
+ASEL,A,AREA,,157
+ASEL,A,AREA,,37
+ASEL,A,AREA,,79
+NSLA,S,1
+ESLN,S,0
+TYPE,3
+MAT,1
+REAL,2   
+ESURF
+ALLSEL 
+FINISH

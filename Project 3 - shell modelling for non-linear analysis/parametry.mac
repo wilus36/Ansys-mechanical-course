@@ -1,0 +1,15 @@
+a=130
+!b=30
+b1=60/5  !pierwsza z dwóch gruboœci blachy
+b2=60/3  !druga z dwóch gruboœci blachy
+d=200
+e=150
+f=80
+h=80
+l=700
+r=(a-h)/2
+cosalfa=(r-((a-h)/2))/r
+sinalfa=SQRT(1-(cosalfa*cosalfa))
+c=r*sinalfa
+l1=200
+m=300         ![kg], nie mo¿e byæ za duza, bo cienka blacha szybko traci statecznoœæ

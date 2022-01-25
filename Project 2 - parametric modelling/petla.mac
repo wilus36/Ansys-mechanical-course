@@ -1,0 +1,28 @@
+*DO,i,0,10 ! For I = 1 to 30:
+
+    /PREP7
+    ALLSEL
+    VCLEAR,ALL !usuwa wszystkie elementy i węzły z zaznaczonych brył
+    VDELE,ALL
+    ADELE,ALL
+    LDELE,ALL
+    KDELE,ALL
+    FINISH
+
+    dg=i
+    h=dg+5
+
+    geometria
+    elementy
+    podparcie
+    obciazenie
+    obliczenia
+    ogladanie
+
+    *GET,napr_Hubera,PLNSOL
+    /OUTPUT,wyniki,prn,,APPEND
+    !/COM,h %dg%, naprezenia Hubera %napr_Hubera% !przykład zapisu do pliku z komentarzem
+    !/COM !"pusty wiersz"
+    /COM, %h% %napr_Hubera% !h - to nazwa pierwszego zapisywanego parametru, napr_Hubera - drugiego
+    /OUTPUT
+*ENDDO
